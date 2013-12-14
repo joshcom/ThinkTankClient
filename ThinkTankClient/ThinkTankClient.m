@@ -10,4 +10,22 @@
 
 @implementation ThinkTankClient
 
+-(id) initWithConfiguration:(ThinkTankConfig *) config
+{
+    if (self = [super init]) {
+        _configuration = config;
+    }
+    
+    return self;
+}
+
+-(id) initWithConfigurationBlock:(ConfigurationBlock) block
+{
+    if (self = [super init]) {
+        _configuration = [[ThinkTankConfig alloc] initWithBlock:block];
+    }
+    
+    return self;
+}
+
 @end

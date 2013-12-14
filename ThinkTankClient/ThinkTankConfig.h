@@ -10,7 +10,7 @@
 
 #define DEFAULT_ENDPOINT @"http://jbox"
 
-typedef void (^ ConfigurationBlock)(id);
+typedef void (^ConfigurationBlock)(id);
 
 @interface ThinkTankConfig : NSObject
 

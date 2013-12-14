@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ThinkTankConfig.h"
 
 @interface ThinkTankClient : NSObject
+
+@property (readonly) ThinkTankConfig * configuration;
+
+-(id) initWithConfiguration:(ThinkTankConfig *) config;
+-(id) initWithConfigurationBlock:(ConfigurationBlock) block;
 
 @end
