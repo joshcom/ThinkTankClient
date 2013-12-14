@@ -37,6 +37,7 @@
 
 - (void)testInit
 {
+    XCTFail(@"Fail!");
     XCTAssertNotNil(client);
 }
 

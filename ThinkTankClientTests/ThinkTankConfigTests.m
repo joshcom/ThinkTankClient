@@ -34,11 +34,11 @@
 
 - (void)testConfigurationBlock
 {
-    ThinkTankConfig * config = [[ThinkTankConfig alloc] initWithBlock:^(ThinkTankConfig * c) {
+    ThinkTankConfig * test_config = [[ThinkTankConfig alloc] initWithBlock:^(ThinkTankConfig * c) {
             c.endpoint = @"http://www.google.com";
         }];
 
-    XCTAssertEqualObjects(config.endpoint, @"http://www.google.com");
+    XCTAssertEqualObjects(test_config.endpoint, @"http://www.google.com");
 }
 
 - (void)testConfigurationDefaults
